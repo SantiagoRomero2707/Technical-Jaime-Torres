@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/prueba_jaime_torres
+    username: root
+    password: 12345
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+      database: mysql
+      database-platform: org.hibernate.dialect.MySQLDialect
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
+  security:
+    user:
+      name: admin
+      password: 12345
+      roles: USER,ADMIN
+
+springdoc:
+  api-docs:
+    enabled: true
+  show-login-endpoint: false
+
