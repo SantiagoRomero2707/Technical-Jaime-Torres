@@ -10,7 +10,7 @@ import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 
 @Configuration
-@OpenAPIDefinition(info =@Info(title = "Prueba Técnica ITS Solution", version = "1.0", description ="Prueba Tecnica que hace algo") )
+@OpenAPIDefinition(info =@Info(title = "Prueba Técnica Jaime Torrer", version = "1.0", description ="Prueba Tecnica para Java BackEnd") )
 public class SwaggerConfig {
     @Bean
     public OpenAPI customizeOpenAPI() {
