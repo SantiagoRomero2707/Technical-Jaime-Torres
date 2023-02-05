@@ -7,9 +7,9 @@ import lombok.*;
 @Getter
 @Setter
 @Builder
-@Entity
 @AllArgsConstructor
 @RequiredArgsConstructor
+@Entity
 @Table(name = "artistas", schema = "prueba_jaime_torres")
 public class ArtistEntity {
 
@@ -33,6 +33,7 @@ public class ArtistEntity {
     @Basic
     @Column(name = "apellidos", nullable = false, length = 30)
     private String lastName;
+
 
     @Override
     public boolean equals(Object o) {

@@ -9,11 +9,13 @@ import lombok.*;
 @Getter
 @Setter
 @Builder
-@Entity
 @AllArgsConstructor
 @RequiredArgsConstructor
+@Entity
 @Table(name = "museo", schema = "prueba_jaime_torres")
 public class MuseumEntity {
+
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_museo", nullable = false)
